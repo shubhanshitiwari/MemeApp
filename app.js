@@ -23,7 +23,7 @@ boxes.forEach((box) => {
       count++; 
       checkWinner()
       
-      if (count === 9 && !mContain.classList.contains("show")) {
+      if (count === 9 ) {
         mPara.innerText = "It's a Draw!";
         mContain.classList.remove("hide");
       }
