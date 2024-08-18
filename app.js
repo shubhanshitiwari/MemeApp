@@ -42,7 +42,7 @@ const enabledBoxes=()=>{
   }
 }
 const showWinner =(winner) =>{
-  mPara.innerText=`Congratulations, Winner Is ${winner}`
+  mPara.innerText=` Winner Is ${winner}`
   mContain.classList.remove("hide")
   disabledBoxes()
 }
