@@ -21,12 +21,14 @@ boxes.forEach((box) => {
       }
       box.disabled =true ;
       count++; 
-      checkWinner()
-      
-      if (count === 9 ) {
-        mPara.innerText = "It's a Draw!";
-        mContain.classList.remove("hide");
-      }
+      if (checkWinner()) {
+      return;
+    }
+
+    if (count === 9) {
+      mPara.innerText = "It's a Draw!";
+      mContain.classList.remove("hide");
+    }
 
     })
 })
